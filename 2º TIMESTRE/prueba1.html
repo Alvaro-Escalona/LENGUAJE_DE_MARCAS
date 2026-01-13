@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0">
+    <title>Ejemplo de inclusión de JavaScript en HTML</title>
+    <script>
+        /* Definición de la función mostrarsaludo()
+            Esta función muestra una ventana emergente con
+            el mensaje ¡Hola MUNDO! */
+        function mostrarsaludo() {
+            /* El método alert muestra un cuadro de diálogo
+                en el navegador que el usuario debe cerrar. */
+            alert("¡Hola MUNDO!");
+        }
+        function mostrarpulsacion() {
+            /* El método alert muestra un cuadro de diálogo
+                en el navegador que el usuario debe cerrar. */
+            alert("¡Has pulsado el botón!");
+        }
+    </script>
+</head>
+<!-- El atributo onload dentro de la etiqueta <body> es un manejador de eventos
+      (event handler). Su función es esperar a que la página web termine de cargarse
+      antes de ejecutar un bloque de código JavaScript, en nuestro caso la función
+      mostrarsaludo() -->
+<body onload="mostrarsaludo();">
+    <h1>Incorporación de JavaScript en HTML</h1>
+    <p>
+        Este es un ejemplo básico para aprender a incluir JavaScript en nuestras
+        páginas webs.
+    </p>
+    <!-- Crea un botón que al ser pulsado por el usuario, activa una acción
+           programada en JavaScript, en nuestro caso la función mostrarpulsacion()-->
+    <button type="button" onclick="mostrarpulsacion();">
+        Hacer clic para ver mensaje
+    </button>
+</body>
+
+
+</html>
