@@ -1,0 +1,138 @@
+/* RESETEO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+    padding-bottom: 4rem;
+}
+
+/* HEADER */
+header {
+    background: #2a4d69;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* NAV */
+nav {
+    background: #4b86b4;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* MAIN */
+main {
+    width: 85%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #555;
+    padding: 8px;
+}
+
+table th {
+    background: #ddd;
+    font-weight: bold;
+}
+
+/* FORMULARIOS */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+input, select, button {
+    padding: 8px;
+}
+
+button {
+    background: #4b86b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2a4d69;
+}
+
+/* FIGURE */
+figure {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: .5rem;
+}
+
+/* ASIDE */
+aside {
+    background: #eaeaea;
+    padding: 1rem;
+    border-left: 4px solid #4b86b4;
+}
+
+/* BLOCKQUOTE */
+blockquote {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #ddd;
+    border-left: 5px solid #333;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2a4d69;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

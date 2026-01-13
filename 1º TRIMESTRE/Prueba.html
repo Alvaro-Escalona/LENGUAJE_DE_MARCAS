@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi primer documento HTML5</title>
+    </head>
+
+    <body>
+        <h1>¡Hola, mundo!</h1>
+        <p>Este es un documento básico en HTML5.</p>
+        <form action="/submit" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <input type="submit" value="Enviar">
+        </form>
+         <form action="/submit" method="POST">
+            <label for="DNI">DNI:</label>
+            <input type="text" id="DNI" name="DNI">
+            <input type="submit" value="Enviar">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>25</td>
+                    <td>Madrid</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>30</td>
+                    <td>Barcelona</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1">
+       <thead>
+           <tr>
+               <th>Producto</th>
+               <th>Precio</th>
+               <th>Cantidad</th>
+               <th>Iva</th>
+               <th>Total</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <td>Manzanas</td>
+               <td>1.00€</td>
+               <td rowspan="2">10€</td>
+               <td rowspan="2">0.21</td>
+               <td rowspan="2">4.2€</td>
+           </tr>
+           <tr>
+               <td>Peras</td>
+               <td>1.50€</td>
+           </tr>
+           <tr>
+               <td colspan="2">Total</td>
+               <td>20€</td>
+               <td>4.2€</td>
+               <td>24.2€</td>
+           </tr>
+       </tbody>
+   </table>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+
+ul {
+    background-color: antiquewhite;
+    width: 15rem;
+    padding: 1rem;
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+ol {
+    
+    list-style-type: lower-greek;
+}

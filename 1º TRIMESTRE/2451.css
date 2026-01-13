@@ -1,0 +1,183 @@
+/* Paleta de colores League of Legends */
+:root {
+  --fondo: #0a0a0a;
+  --fondo-secundario: #111;
+  --texto: #e6e6e6;
+  --dorado: #c79b3b;
+  --azul: #548cb4;
+  --gris: #444;
+  --borde: #c79b3b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 0 10%;
+}
+
+/* ====== HEADER ====== */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--fondo-secundario);
+  border-bottom: 2px solid var(--dorado);
+}
+
+header h1 {
+  color: var(--dorado);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: var(--texto);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--azul);
+}
+
+aside {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: var(--dorado);
+}
+
+/* ====== SECCIONES ====== */
+main {
+  margin: 40px 0;
+}
+
+h2 {
+  color: var(--dorado);
+  margin: 30px 0 10px 0;
+  border-bottom: 1px solid var(--dorado);
+  padding-bottom: 5px;
+}
+
+p, li, dd {
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 30px;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 15px auto;
+  border: 2px solid var(--borde);
+  border-radius: 8px;
+}
+
+/* Tabla de campeones */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--fondo-secundario);
+}
+
+caption {
+  color: var(--dorado);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid var(--dorado);
+  padding: 10px;
+}
+
+th {
+  background-color: var(--gris);
+  color: var(--texto);
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: var(--fondo-secundario);
+  border-top: 2px solid var(--dorado);
+  margin-top: 40px;
+}
+
+footer address {
+  color: var(--azul);
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+footer img {
+  border: 2px solid var(--borde);
+  border-radius: 10px;
+}
+
+/* ====== DIALOG ====== */
+dialog {
+  background-color: #1a1a1a;
+  border: 2px solid var(--dorado);
+  color: var(--texto);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* ====== DETALLES EXTRA ====== */
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--dorado);
+  margin: 20px 0;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  body {
+    padding: 0 5%;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  table, th, td {
+    font-size: 0.9em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo CSS Resumido</title>
+
+    <style>
+        /* ================= SELECTORES ================= */
+
+        /* Selector universal */
+        * { box-sizing: border-box; }
+
+        /* Selector de etiqueta */
+        h1 { color: darkblue; }
+
+        /* Selector por clase */
+        .destacado { color: crimson; }
+
+        /* Selector por ID */
+        #especial { background-color: lightyellow; }
+
+        /* Selector descendente */
+        section p {
+            font-style: italic;
+        }
+
+        /* Selector de hijo directo */
+        nav > a {
+            color: green;
+        }
+
+        /* Pseudoclase */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pseudoelemento */
+        p::first-letter {
+            font-size: 2em;
+            color: orange;
+        }
+
+        /* ================= COLORES ================= */
+        .colores {
+            color: rgb(255, 0, 0);     /* RGB */
+            background-color: #cce6ff; /* HEX */
+            border: 2px solid hsl(200, 50%, 40%); /* HSL */
+        }
+
+        /* ================= FUENTES ================= */
+        .fuente {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        /* ================= MEDIDAS ================= */
+        .medidas {
+            width: 50%;      /* Porcentaje */
+            height: 100px;   /* px */
+            border: 2px solid black;
+        }
+
+        /* ================= MÁRGENES Y PADDING ================= */
+        .espaciado {
+            margin: 20px;
+            padding: 15px;
+            background-color: #f0f0f0;
+        }
+
+        /* ================= BORDES ================= */
+        .borde {
+            border: 4px dashed red;
+            border-radius: 10px;
+        }
+
+        /* ================= OUTLINE ================= */
+        .outline {
+            outline: 3px solid blue; /* No ocupa espacio */
+        }
+
+        /* ================= DISPLAY ================= */
+        .inline { display: inline; background: #ffd9cc; }
+        .block { display: block; background: #ccffcc; }
+
+        /* ================= VISIBILITY ================= */
+        .oculto { visibility: hidden; }
+
+        /* ================= OVERFLOW ================= */
+        .overflow {
+            width: 150px;
+            height: 60px;
+            overflow: scroll;
+            border: 1px solid black;
+        }
+
+        /* ================= POSICIONAMIENTO ================= */
+        .relativo {
+            position: relative;
+            left: 20px;
+        }
+
+        .absoluto {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: #ffe066;
+        }
+
+        /* ================= Z-INDEX ================= */
+        .z1 {
+            position: absolute;
+            z-index: 1;
+            background: lightblue;
+            top: 180px;
+            left: 20px;
+            padding: 10px;
+        }
+
+        .z2 {
+            position: absolute;
+            z-index: 2;
+            background: lightcoral;
+            top: 200px;
+            left: 50px;
+            padding: 10px;
+        }
+
+        /* ================= SOMBRAS ================= */
+        .sombra-texto {
+            text-shadow: 2px 2px 4px gray;
+        }
+
+        .sombra-caja {
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+        }
+
+        /* ================= OPACIDAD ================= */
+        .opacidad {
+            opacity: 0.5; /* Mitad transparente */
+        }
+
+        /* ================= TRANSFORM ================= */
+        .girado {
+            transform: rotate(10deg);
+        }
+
+        /* ================= TRANSITIONS ================= */
+        .transicion {
+            background-color: #aae;
+            transition: all 0.4s;
+        }
+        .transicion:hover {
+            background-color: #55f;
+            transform: scale(1.1);
+        }
+
+        /* ================= ANIMACIONES ================= */
+
+        @keyframes mover {
+            0%   { transform: translateX(0); }
+            50%  { transform: translateX(50px); }
+            100% { transform: translateX(0); }
+        }
+
+        .animacion {
+            background-color: #ffc;
+            padding: 10px;
+            animation: mover 2s infinite;
+        }
+
+        /* ================= FONDOS ================= */
+
+        .fondo {
+            background-image: url("https://via.placeholder.com/100");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 120px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejemplo Resumido de CSS3</h1>
+
+    <section>
+
+        <h2 class="destacado">Selectores y texto</h2>
+
+        <p>Este párrafo usa pseudoelemento ::first-letter.</p>
+        <br>
+        <br>
+        <p id="especial">Este párrafo tiene un ID aplicado.</p>
+        <br>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <h2>Colores</h2>
+        <div class="colores">Caja con colores RGB / HEX / HSL</div>
+
+        <h2>Fuentes y texto</h2>
+        <p class="fuente">Texto con estilos de fuente.</p>
+
+        <h2>Medidas</h2>
+        <div class="medidas">Caja con medidas</div>
+
+        <h2>Márgenes y padding</h2>
+        <div class="espaciado">Caja con espaciado</div>
+
+        <h2>Bordes</h2>
+        <div class="borde">Caja con borde</div>
+
+        <h2>Outline</h2>
+        <div class="outline">Caja con outline</div>
+
+        <h2>Display</h2>
+        <span class="inline">Inline</span>
+        <span class="block">Block</span>
+
+        <h2>Overflow</h2>
+        <div class="overflow">
+            Texto muy largo que no cabe y muestra scroll porque está dentro de un contenedor pequeño.
+        </div>
+
+        <h2>Posicionamiento y Z-index</h2>
+        <div class="relativo">Caja relativa</div>
+        <div class="z1">Z-index 1</div>
+        <div class="z2">Z-index 2</div>
+
+        <h2>Sombras</h2>
+        <p class="sombra-texto">Texto con sombra</p>
+        <div class="sombra-caja">Caja con sombra</div>
+
+        <h2>Opacidad</h2>
+        <div class="opacidad">Caja semi-transparente</div>
+
+        <h2>Transform</h2>
+        <div class="girado">Caja girada</div>
+
+        <h2>Transition</h2>
+        <div class="transicion">Pasa el ratón por encima</div>
+
+        <h2>Animación</h2>
+        <div class="animacion">Esto se mueve</div>
+
+        <h2>Fondos</h2>
+        <div class="fondo"></div>
+
+    </section>
+
+</body>
+</html>

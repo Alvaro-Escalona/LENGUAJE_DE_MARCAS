@@ -1,0 +1,43 @@
+.tipo1 {
+    caption-side: bottom;
+    empty-cells: hide;
+    left: 50%;
+    border: 4px dashed red;
+}
+
+.tipo2 {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 300px;
+    height: 200px;
+    border-width: 5px;
+    border-color: blue;
+    border-style: dashed;
+}
+
+.tipo3 {
+    border-style: double;
+    border-color: blue;
+    border-spacing: 10px;
+    border-width: 10px;
+}
+
+td {
+    vertical-align: bottom;
+}
+
+td {
+    padding: 12px;
+    border: 2px double blue;
+    /* bordes internos de cada celda */
+}
+
+.especial {
+    border: 5px inset green;
+    /* bordes internos de cada celda */
+}
+
+.doble {
+    border-bottom: 10px double rgb(186, 36, 39);
+    /* bordes internos de cada celda */
+}

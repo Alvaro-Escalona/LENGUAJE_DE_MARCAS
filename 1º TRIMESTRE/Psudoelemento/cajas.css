@@ -1,0 +1,40 @@
+.caja1 {
+    border-color: black;
+    border-style: double;
+    border-width: 10px;
+    width: 30%;
+    height: 25vh;
+    margin: 25px;
+    padding: 1.5em;
+    background-color: aqua;
+}
+
+
+.caja2 {
+    border-width: 15px;
+    border-left-color: rgb(60, 30, 210);
+    border-right-color: rgb(235, 148, 203);
+    border-bottom-color: rgb(242, 153, 11);
+    border-top-color: rgb(226, 245, 220);
+    border-style:groove;
+    width:60%;
+    height: 40%;
+    margin-top: 30px;
+    padding: 1rem;
+    background-color: rgb(165, 42, 42);
+}
+
+
+.caja3 {
+    border-width: 5px;
+    border-color: rgb(128, 0, 255);
+    border-style:dashed;
+    width:45px;
+    height: 50px;
+    margin-left: 60%;
+    padding: 1vmax;
+    background-color: rgb(225, 120, 0);
+    outline: 1px;
+    outline-color: snow;
+    outline-style:dotted;
+}

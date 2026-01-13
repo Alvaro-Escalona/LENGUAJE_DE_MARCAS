@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    text-align: right;
+    background-color: yellow;
+}
+
+main {
+    text-align: justify;
+}
+
+h1 {
+    color: yellow;
+}
+
+h2 {
+    color: red;
+}
+
+footer {
+    background-color: aqua;
+    text-align: center;
+}

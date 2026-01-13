@@ -1,0 +1,19 @@
+body {
+    background-color: azure;
+}
+
+header {
+    background-color: rgb(246, 250, 4);
+    color: rgb(156, 207, 16);
+    font-family: fantasy;
+    text-align: right;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: circle;
+    color: blue;
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: azure;
+}
+
+header {
+    background-color: rgb(246, 250, 4);
+    color: rgb(156, 207, 16);
+    font-family: fantasy;
+    text-align: right;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: circle;
+    color: blue;
+}
+
+main {
+    text-align: justify;
+}
+
+h1 {
+    color: rgb(202, 163, 79);
+    font-family: monospace;
+}
+
+dfn {
+    color: blueviolet;
+}
+
+h2 {
+    color: rgb(161, 6, 71);
+    font-family: monospace;
+}
+
+strong {
+    color: blueviolet;
+}
+
+ol {
+    list-style: upper-roman;
+    font-family: sans-serif;
+
+}
+
+hr {
+    color: rgb(30, 210, 69);
+}
+
+address {
+    font-family: cursive;
+    text-align: center;
+    background-color: cadetblue;
+}

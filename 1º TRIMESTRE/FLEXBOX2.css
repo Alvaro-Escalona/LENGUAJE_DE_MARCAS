@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Estilos generales */
+.item {
+    background: #4b86b4;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #2a4d69;
+}
+
+/* 1. FLEXBOX BÁSICO */
+.flex-basico {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    background: #e8eef5;
+    border: 2px solid #4b86b4;
+    margin-bottom: 20px;
+}
+
+/* 2. JUSTIFY-CONTENT */
+.contenedor {
+    display: flex;
+    gap: 15px;
+    background: #dde7f0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+/* 3. ALIGN-ITEMS */
+.alto {
+    display: flex;
+    gap: 20px;
+}
+
+.vertical {
+    display: flex;
+    gap: 10px;
+    height: 120px;
+    background: #e8eef5;
+    border: 2px solid #4b86b4;
+    padding: 10px;
+}
+
+.centerV {
+    align-items: center;
+}
+
+.startV {
+    align-items: flex-start;
+}
+
+.endV {
+    align-items: flex-end;
+}
+
+/* 4. FLEX WRAP */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 250px;
+    background: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #4b86b4;
+}
+
+.grande {
+    width: 100px;
+    height: 50px;
+}
+
+/* 5. DIRECTION */
+.direction {
+    display: flex;
+    gap: 10px;
+    background: #e7f2ff;
+    padding: 10px;
+    border: 2px solid #4b86b4;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}

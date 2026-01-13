@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: aquamarine;
+    padding-top:5em;
+    margin: 1em;
+}

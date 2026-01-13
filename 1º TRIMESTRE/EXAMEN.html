@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Codificación -->
+    <meta charset="UTF-8">
+
+    <!-- Metadatos básicos -->
+    <meta name="robots" content="noindex"> <!-- No indexar -->
+    <meta name="author" content="Ejemplo"> <!-- Autor -->
+    <meta name="keywords" content="html, ejemplo"> <!-- Palabras clave -->
+    <meta http-equiv="refresh" content="; url=https://www.example.com"> <!-- Redirección -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación móvil -->
+
+    <title>Ejemplo HTML Resumido</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ejemplo Completo Resumido</h1> <!-- Encabezado principal -->
+        <nav> <!-- Menú -->
+            <a href="#bloque">Bloque</a> |
+            <a href="#linea">Línea</a> |
+            <a href="#tablas">Tablas</a> |
+            <a href="#multimedia">Multimedia</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========================= ELEMENTOS DE BLOQUE ========================= -->
+        <section id="bloque">
+            <h2>Elementos de Bloque</h2>
+
+            <article> <!-- Artículo independiente -->
+                <h3>Ejemplo de Article</h3>
+                <p>Contenido de un artículo. Sirve como sección autónoma.</p>
+            </article>
+
+            <aside> <!-- Información relacionada -->
+                <p>Esto es un contenido relacionado con el artículo (aside).</p>
+            </aside>
+
+            <address> <!-- Información de contacto -->
+                Contacto: ejemplo@correo.com
+            </address>
+
+            <blockquote cite="Yoda"> <!-- Cita en bloque -->
+                “El HTML es poderoso cuando se comprende.”
+            </blockquote>
+
+            <details> <!-- Desplegable -->
+                <summary>Más información</summary>
+                Texto que aparece al desplegar.
+            </details>
+
+            <p>Esto es un párrafo.</p>
+
+            <pre> <!-- Respeta formato -->
+Texto en pre.
+    Con espacios y saltos.
+            </pre>
+
+            <hr> <!-- Línea divisoria -->
+
+            <dialog open> <!-- Cuadro de diálogo -->
+                Esto es un cuadro de diálogo.
+            </dialog>
+
+            <div> <!-- Contenedor -->
+                Contenedor genérico (div).
+            </div>
+
+            <!-- Lista de descripciones -->
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado</dd>
+            </dl>
+
+            <!-- Listas -->
+            <ul>
+                <li>Lista no ordenada 1</li>
+                <li>Lista no ordenada 2</li>
+            </ul>
+
+            <ol>
+                <li>Lista ordenada 1</li>
+                <li>Lista ordenada 2</li>
+            </ol>
+
+            <!-- Figura -->
+            <figure>
+                <img src="https://via.placeholder.com/120" alt="Ejemplo">
+                <figcaption>Imagen de ejemplo</figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- ========================= ELEMENTOS DE LÍNEA ========================= -->
+        <section id="linea">
+            <h2>Elementos de Línea</h2>
+
+            <p>Enlace externo: <a href="https://www.google.com">Google</a></p>
+
+            <p>Abreviatura: <abbr title="HyperText Markup Language">HTML</abbr></p>
+
+            <p>Texto en <b>negrita simple</b> y texto con importancia <strong>fuerte</strong>.</p>
+
+            <p>Salto de línea con br:<br>Segunda línea</p>
+
+            <p>Obra citada: <cite>El Principito</cite></p>
+
+            <p>Código: <code>console.log("Hola")</code></p>
+
+            <p>Texto eliminado: <del>Esto ya no vale</del></p>
+
+            <p>Definición de término: <dfn>Algoritmo</dfn></p>
+
+            <p>Énfasis: <em>muy importante</em></p>
+
+            <p>Cursiva genérica: <i>texto en cursiva</i></p>
+
+            <p>Texto añadido: <ins>Nuevo contenido</ins></p>
+
+            <p>Tecla: pulsa <kbd>Ctrl + C</kbd></p>
+
+            <p>Marcado: <mark>Texto resaltado</mark></p>
+
+            <p>Cita corta: <q>HTML organiza información</q></p>
+
+            <p>Tachado: <s>Precio antiguo</s></p>
+
+            <pre><samp>Mensaje del sistema</samp></pre>
+
+            <p>Texto pequeño: <small>Aviso legal</small></p>
+
+            <p>Exponente: x<sup>2</sup> — Subíndice: H<sub>2</sub>O</p>
+
+            <p>Variable: <var>numero</var></p>
+        </section>
+
+
+        <!-- ========================= TABLAS ========================= -->
+        <section id="tablas">
+            <h2>Tablas</h2>
+
+            <table border="1">
+                <caption>Ejemplo de Tabla</caption>
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1993</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>1996</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Datos finales</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br>
+
+            <!-- Tabla con colspan y rowspan -->
+            <table border="1">
+                <tr>
+                    <td colspan="2">Colspan</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Rowspan</td>
+                    <td>Celda A</td>
+                </tr>
+                <tr>
+                    <td>Celda B</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <!-- Tabla con colgroup -->
+            <table border="1">
+                <colgroup span="1" style="background-color: #ffd29a;"></colgroup>
+                <colgroup span="2" style="background-color: #caffb8;"></colgroup>
+
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+            </table>
+
+        </section>
+
+
+        <!-- ========================= MULTIMEDIA ========================= -->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+
+            <!-- Imagen -->
+            <img src="https://via.placeholder.com/150" alt="Imagen ejemplo">
+
+            <!-- Picture -->
+            <picture>
+                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/600x150">
+                <img src="https://via.placeholder.com/200x100" alt="Ejemplo responsive">
+            </picture>
+
+            <!-- Audio -->
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+
+            <!-- Video -->
+            <video controls width="250">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Ejemplo de página resumida</p>
+    </footer>
+
+</body>
+
+</html>

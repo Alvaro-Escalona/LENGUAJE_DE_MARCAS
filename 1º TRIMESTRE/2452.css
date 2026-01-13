@@ -1,0 +1,193 @@
+/* Variables simples (aunque es un “extra” pero fácil de entender) */
+:root {
+  --fondo: #0a0a0a;
+  --fondo-sec: #111111;
+  --texto: #e6e6e6;
+  --dorado: #c79b3b;
+  --azul: #548cb4;
+  --gris: #444444;
+  --borde-dorado: #c79b3b;
+}
+
+/* Reset básico usando selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--fondo-sec);
+  border-bottom: 2px solid var(--dorado);
+}
+
+header h1 {
+  color: var(--dorado);
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: var(--texto);
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--azul);
+}
+
+aside {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: var(--dorado);
+}
+
+/* SECCIONES DE CONTENIDO */
+main {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: var(--dorado);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--dorado);
+  padding-bottom: 5px;
+}
+
+p, li, dd {
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 30px;
+}
+
+/* Imágenes simples */
+img {
+  display: block;
+  margin: 15px auto;
+  border: 2px solid var(--borde-dorado);
+  border-radius: 8px;
+  max-width: 100%; /* para que no se salga */
+  height: auto;
+}
+
+/* TABLA CAMPEONES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: var(--fondo-sec);
+}
+
+caption {
+  color: var(--dorado);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid var(--dorado);
+  padding: 10px;
+}
+
+th {
+  background-color: var(--gris);
+  color: var(--texto);
+}
+
+tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--fondo-sec);
+  border-top: 2px solid var(--dorado);
+  margin-top: 40px;
+}
+
+footer address {
+  color: var(--azul);
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 0.9em;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+footer img {
+  border: 2px solid var(--borde-dorado);
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* DIÁLOGO */
+dialog {
+  background-color: #1a1a1a;
+  border: 2px solid var(--dorado);
+  color: var(--texto);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* HR */
+hr {
+  border: none;
+  height: 2px;
+  background-color: var(--dorado);
+  margin: 20px 0;
+}
+
+/* RESPONSIVO BÁSICO (usa unidades relativas y porcentaje) */
+@media (max-width: 768px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  table, th, td {
+    font-size: 0.9em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

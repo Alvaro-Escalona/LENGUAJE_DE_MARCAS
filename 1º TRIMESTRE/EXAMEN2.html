@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUMEN COMPLETO HTML5 + CSS3</title>
+    <link rel="stylesheet" href="EXAMEN2.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Resumen Completo de HTML5 y CSS3</h1>
+        <p>Todos los elementos principales en una sola página</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="#estructura">Estructura</a></li>
+            <li><a href="#texto">Texto</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#formularios">Formularios</a></li>
+            <li><a href="#semanticas">Etiquetas Semánticas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- SECCIÓN 1 -->
+        <section id="estructura">
+            <h2>1. Estructura básica de HTML</h2>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+
+            <details>
+                <summary>¿Qué es DOCTYPE?</summary>
+                Indica que estamos usando HTML5.
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 2 -->
+        <section id="texto">
+            <h2>2. Texto y encabezados</h2>
+
+            <h1>Encabezado h1</h1>
+            <h2>Encabezado h2</h2>
+            <h3>Encabezado h3</h3>
+            <h4>Encabezado h4</h4>
+            <h5>Encabezado h5</h5>
+            <h6>Encabezado h6</h6>
+
+            <p>Este es un párrafo normal.</p>
+
+            <pre>
+Este es un bloque &lt;pre&gt;
+Se respetan los saltos
+    y tabulaciones.
+            </pre>
+
+            <p>Uso de <strong>strong</strong>, <em>em</em>, y <mark>mark</mark>.</p>
+
+            <p>Entidad HTML para mayor ( &gt; ), menor ( &lt; ), euro (&euro;), espacio (&nbsp;).</p>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 3 -->
+        <section id="listas">
+            <h2>3. Listas</h2>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+
+            <h3>Lista desordenada</h3>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+
+            <h3>Lista de definiciones</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado</dd>
+
+                <dt>CSS</dt>
+                <dd>Lenguaje de estilos</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 4 -->
+        <section id="multimedia">
+            <h2>4. Imágenes, vídeo y audio</h2>
+
+            <figure>
+                <img src="https://picsum.photos/300/200" alt="Imagen ejemplo">
+                <figcaption>Ejemplo de imagen con figcaption</figcaption>
+            </figure>
+
+            <h3>Vídeo</h3>
+            <video controls width="300">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                Tu navegador no soporta audio.
+            </audio>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 5 -->
+        <section id="tablas">
+            <h2>5. Tablas</h2>
+
+            <table> 
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>21</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>25</td>
+                        <td>Valencia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 6 -->
+        <section id="formularios">
+            <h2>6. Formularios</h2>
+
+            <form>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Escribe tu nombre">
+
+                <label>Email:</label>
+                <input type="email">
+
+                <label>Contraseña:</label>
+                <input type="password">
+
+                <label>Color favorito:</label>
+                <input type="color">
+
+                <label>Fecha:</label>
+                <input type="date">
+
+                <label>Provincia:</label>
+                <select>
+                    <option>Madrid</option>
+                    <option>Barcelona</option>
+                    <option>Sevilla</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- SECCIÓN 7 -->
+        <section id="semanticas">
+            <h2>7. Etiquetas semánticas</h2>
+
+            <article>
+                <h3>Artículo de ejemplo</h3>
+                <p>Este texto pertenece a un artículo real.</p>
+            </article>
+
+            <aside>
+                <h3>Contenido relacionado</h3>
+                <p>Este bloque pertenece a un <strong>aside</strong>.</p>
+            </aside>
+
+            <blockquote cite="Yoda">
+                La web es poderosa por su universalidad.
+                <cite>Yoda</cite>
+            </blockquote>
+
+            <dialog open>
+                <p>¡Hola! Soy un cuadro de diálogo.</p>
+            </dialog>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados · Página de estudio HTML5 + CSS3</p>
+    </footer>
+
+</body>
+</html>

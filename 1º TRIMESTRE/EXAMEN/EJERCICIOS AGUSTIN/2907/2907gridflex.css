@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Layout general con Grid Areas */
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* header, main, footer */
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+    /* asegura que el footer quede al final */
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 4vw;
+    padding: 1vw 3.5vw;
+    background-color: burlywood;
+}
+
+figure {
+    margin: 0; /* elimina márgenes por defecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgcabecera {
+    width: 15vw;
+    padding: 0.1vw;
+    background-color: black;
+}
+
+figcaption {
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: 0.5vw;
+    color: #333;
+}
+
+/* Main con Grid Areas */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 22vw 1fr;
+    grid-template-areas:
+     "aside section";
+    gap: 2vw;
+    padding: 2vw;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    font-family: fantasy;
+    text-align: justify;
+    background-color: chocolate;
+    font-size: 2.1vw;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+.fotoautor {
+    width: 100%;
+    display: block;
+}
+
+/* Section */
+section {
+    grid-area: section;
+    font-family: cursive;
+    background-color: bisque;
+    font-size: 2.1vw;
+    padding: 3vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+/* Footer con Flexbox */
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+/* Estilo general de la lista */
+section ul {
+    list-style: none;
+    /* quitamos viñetas por defecto */
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Cada obra con un pseudoelemento ::before */
+section ul li::before {
+    content: "📖 ";
+    /* icono o texto antes de cada obra */
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Ejemplo con ::after */
+section ul li::after {
+    content: " ✦";
+    /* estrella decorativa al final */
+    color: chocolate;
+    font-size: 1.2vw;
+}
+
+/* Estilo base de los enlaces */
+a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* Enlace ya visitado */
+a:visited {
+    color: rgb(98, 126, 13);
+}
+
+/* Al pasar el ratón por encima */
+a:hover {
+    color: darkred;
+    text-decoration: underline;
+    transition: 0.3s ease;
+    /* efecto suave */
+}
+
+/* Cuando se hace clic */
+a:active {
+    color: orange;
+}
+
+/* Cuando el enlace tiene foco (ej. con tabulador) */
+a:focus {
+    outline: 2px dashed darkgreen;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor principal */
+.tabla-flex {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    margin-top: 2vw;
+    font-size: 1.6vw;
+}
+
+/* Cada fila */
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Columnas */
+.col {
+    flex: 1;
+    /* todas las columnas ocupan el mismo ancho */
+    padding: 1vw;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: burlywood;
+    font-weight: bold;
+}
+
+/* Contenedor principal con Grid */
+.tabla-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* cada fila ocupa todo el ancho */
+    border: 2px solid #333;
+    margin-top: 2vw;
+    font-size: 1.6vw;
+}
+
+/* Cada fila es un grid con 3 columnas */
+.filag {
+    display: grid;
+    grid-template-columns: 10vw 1fr 15vw;
+    /* Año, Hito, Lugar */
+}
+
+/* Columnas base */
+.colg {
+    border: 1px solid #999;
+    padding: 1vw;
+    text-align: center;
+}
+
+/* Colores por columna */
+.filag .colg:nth-child(1) {
+    background-color: #ffe4c4;
+    /* columna Año */
+}
+
+.filag .colg:nth-child(2) {
+    background-color: #fafad2;
+    /* columna Hito */
+}
+
+.filag .colg:nth-child(3) {
+    background-color: #e0ffff;
+    /* columna Lugar */
+}
+
+.autor-foto {
+    width: 5vw;
+    /* tamaño de la foto */
+    height: auto;
+    border-radius: 50%;
+    /* fotos redondas */
+    display: block;
+    margin: 0 auto;
+    /* centra la foto en la columna */
+}
+
+.tabla-ventas {
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid #333;
+    /* borde más grueso */
+    margin-top: 2vw;
+    font-size: 1.6vw;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.tabla-ventas thead {
+    background-color: burlywood;
+}
+
+.tabla-ventas th,
+.tabla-ventas td {
+    border: 25px solid #999;
+    padding: 0.8vw;
+    text-align: center;
+}
+
+/* Cada fila de un color distinto */
+.tabla-ventas tbody tr:nth-child(1) {
+    background-color: #ffe4c4;
+    /* 1950s */
+}
+
+.tabla-ventas tbody tr:nth-child(2) {
+    background-color: #fafad2;
+    /* 1960s */
+}
+
+.tabla-ventas tbody tr:nth-child(3) {
+    background-color: #e0ffff;
+    /* 1970s */
+}
+
+.tabla-ventas tbody tr:nth-child(4) {
+    background-color: #f0e68c;
+    /* 1980s */
+}
+
+.tabla-ventas tbody tr:nth-child(5) {
+    background-color: #dda0dd;
+    /* 1990s-2000s */
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f5f5dc;
+    border-left: 5px solid #8b4513; /* borde decorativo a la izquierda */
+    padding: 1vw 2vw;
+    margin: 2vw 0;
+    border-radius: 4px;
+}
+
+blockquote cite {
+    display: block;           /* forzar salto de línea */
+    text-align: right;        /* alinear a la derecha */
+    font-weight: bold;
+    margin-top: 0.5vw;
+    color: #555;
+}
+
+abbr[title] {
+    cursor: help;         /* muestra que hay información adicional */
+    border-bottom: 1px dotted #555; /* subrayado punteado */
+    text-decoration: none;
+}
+
+.comentario-margen {
+    float: right;               /* flota a la derecha del párrafo */
+    width: 15%;                 /* ancho fijo para el margen */
+    font-size: 0.5em;           /* más pequeño que el texto principal */
+    color: #555;
+    background-color: #ffffcc;  /* fondo para destacar */
+    border-left: 4px solid #ffcc00; /* borde lateral */
+    padding: 0.5vw 1vw;
+    margin: 0 0 0 1vw;          /* espacio a la izquierda del comentario */
+    font-style: italic;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* sutil sombra */
+}

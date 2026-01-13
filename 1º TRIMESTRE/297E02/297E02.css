@@ -1,0 +1,21 @@
+*  {
+    box-sizing: border-box;
+}
+
+.iz {
+    display:flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    width: 66rem;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+
+.der2 {
+    display: inline-flex;
+    height: 50rem;
+    width: 33rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}

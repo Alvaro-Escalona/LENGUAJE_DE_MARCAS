@@ -1,0 +1,23 @@
+/* Contenedor Flex */
+.contenedor {
+    display: flex;                /* Activa Flexbox */
+    justify-content: center;      /* Alinea horizontalmente */
+    align-items: center;          /* Alinea verticalmente */
+    gap: 20px;                    /* Espacio entre cajas */
+    height: 200px;                /* Altura del contenedor */
+    background: #eef;
+    border: 2px solid #88a;
+}
+
+/* Cajas internas */
+.caja {
+    width: 60px;
+    height: 60px;
+    background: #4b86b4;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;      /* Centra número */
+    align-items: center;          /* Centra número */
+    border-radius: 10px;
+}

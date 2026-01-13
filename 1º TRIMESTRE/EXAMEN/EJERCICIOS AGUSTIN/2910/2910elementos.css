@@ -1,0 +1,24 @@
+.ulnormal {
+    list-style-position: outside;
+    list-style-image: url(flecha.jpg);
+    background-color: bisque;
+    width: max-content;
+    margin: 25px;
+    padding: 1.5em;
+}
+
+.olnormal {
+    list-style-type: lower-greek;
+    list-style-position: outside;
+    border-style: solid;
+    border-radius: 25%;
+    width: max-content;
+    position: relative;
+    left: 10vw;
+    border-width: 15px;
+    border-left-color: chocolate;
+    border-right-color: rgb(162, 235, 148);
+    border-bottom-color: darkgoldenrod;
+    border-top-color: beige;
+    border-style: groove;
+}
